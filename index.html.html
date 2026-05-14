@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Casa Papel — Insumos para tu comercio</title>
+<meta name="description" content="Bolsas, cajas, descartables, limpieza y más. Precios de fábrica. Envío gratis en CABA y Zona Norte desde $30.000.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root {
+  --green-dark: #054a38;
+  --green-mid: #0f7a57;
+  --green-main: #1ab87a;
+  --green-light: #d4f5e7;
+  --green-pale: #f0faf6;
+  --cream: #faf9f6;
+  --sand: #f2efe8;
+  --ink: #111612;
+  --ink-mid: #3a4a40;
+  --ink-light: #7a8a80;
+  --white: #ffffff;
+  --radius: 12px;
+  --radius-sm: 8px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--cream);
+  color: var(--ink);
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+a { text-decoration: none; color: inherit; }
+
+/* ── TOPBAR ── */
+.topbar {
+  background: var(--green-dark);
+  color: var(--green-light);
+  font-size: 12.5px;
+  padding: 9px 0;
+  overflow: hidden;
+}
+.topbar-track {
+  display: flex;
+  gap: 60px;
+  animation: marquee 28s linear infinite;
+  white-space: nowrap;
+  width: max-content;
+}
+.topbar-track span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  opacity: 0.92;
+}
+.topbar-track span svg { flex-shrink: 0; }
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* ── NAV ── */
+nav {
+  background: var(--white);
+  border-bottom: 1px solid #e8ede9;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.nav-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.logo {
+  font-family: 'DM Serif Display', serif;
+  font-size: 22px;
+  letter-spacing: -0.5px;
+  color: var(--green-dark);
+  flex-shrink: 0;
+}
+.logo em {
+  font-style: italic;
+  color: var(--green-main);
+}
+.nav-links {
+  display: flex;
+  gap: 4px;
+  list-style: none;
+  flex: 1;
+}
+.nav-links a {
+  font-size: 13.5px;
+  color: var(--ink-mid);
+  padding: 6px 12px;
+  border-radius: var(--radius-sm);
+  transition: background 0.15s, color 0.15s;
+  font-weight: 400;
+}
+.nav-links a:hover {
+  background: var(--green-pale);
+  color: var(--green-dark);
+}
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+.btn-ghost {
+  font-size: 13px;
+  padding: 7px 16px;
+  border: 1px solid #d4dbd6;
+  border-radius: var(--radius-sm);
+  color: var(--ink-mid);
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: 'DM Sans', sans-serif;
+}
+.btn-ghost:hover { border-color: var(--green-main); color: var(--green-dark); }
+.btn-cart {
+  background: var(--green-dark);
+  color: var(--white);
+  border: none;
+  padding: 8px 18px;
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'DM Sans', sans-serif;
+  transition: background 0.15s;
+}
+.btn-cart:hover { background: var(--green-mid); }
+
+/* ── HERO ── */
+.hero {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 72px 32px 80px;
+  display: grid;
+  grid-template-columns: 1fr 440px;
+  gap: 64px;
+  align-items: center;
+}
+.hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--green-light);
+  color: var(--green-dark);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  padding: 5px 14px;
+  border-radius: 99px;
+  margin-bottom: 22px;
+}
+.hero h1 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 52px;
+  line-height: 1.1;
+  color: var(--green-dark);
+  letter-spacing: -1.5px;
+  margin-bottom: 20px;
+}
+.hero h1 em {
+  font-style: italic;
+  color: var(--green-main);
+}
+.hero-sub {
+  font-size: 16.5px;
+  color: var(--ink-light);
+  line-height: 1.65;
+  max-width: 440px;
+  margin-bottom: 36px;
+}
+.hero-btns {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.btn-primary {
+  background: var(--green-dark);
+  color: var(--white);
+  border: none;
+  padding: 14px 28px;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  transition: background 0.15s, transform 0.1s;
+}
+.btn-primary:hover { background: var(--green-mid); transform: translateY(-1px); }
+.btn-outline {
+  background: transparent;
+  border: 1.5px solid var(--green-dark);
+  color: var(--green-dark);
+  padding: 13px 24px;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  transition: all 0.15s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.btn-outline:hover { background: var(--green-pale); }
+.hero-stats {
+  background: var(--white);
+  border: 1px solid #e4ece7;
+  border-radius: 20px;
+  padding: 32px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  overflow: hidden;
+  box-shadow: 0 4px 32px rgba(5,74,56,0.06);
+}
+.stat {
+  padding: 24px 20px;
+  text-align: center;
+  position: relative;
+}
+.stat::after {
+  content: '';
+  position: absolute;
+  right: 0; top: 20%; bottom: 20%;
+  width: 1px;
+  background: #e4ece7;
+}
+.stat:nth-child(2)::after,
+.stat:nth-child(4)::after { display: none; }
+.stat-before { display: none; }
+.stat:nth-child(3),
+.stat:nth-child(4) {
+  border-top: 1px solid #e4ece7;
+}
+.stat-num {
+  font-family: 'DM Serif Display', serif;
+  font-size: 36px;
+  color: var(--green-dark);
+  letter-spacing: -1px;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+.stat-num span { color: var(--green-main); }
+.stat-lbl {
+  font-size: 12.5px;
+  color: var(--ink-light);
+  font-weight: 400;
+}
+.stat-badge {
+  display: inline-block;
+  background: var(--green-light);
+  color: var(--green-dark);
+  font-size: 10px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 99px;
+  margin-bottom: 8px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+
+/* ── CATEGORIES ── */
+.section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 64px 32px;
+}
+.section-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+.section-title {
+  font-family: 'DM Serif Display', serif;
+  font-size: 30px;
+  color: var(--green-dark);
+  letter-spacing: -0.5px;
+  line-height: 1.1;
+}
+.section-link {
+  font-size: 13px;
+  color: var(--green-mid);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: gap 0.15s;
+}
+.section-link:hover { gap: 8px; }
+
+.cat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.cat-card {
+  background: var(--white);
+  border: 1px solid #e4ece7;
+  border-radius: 16px;
+  padding: 28px 24px;
+  cursor: pointer;
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+.cat-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--green-main);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s;
+}
+.cat-card:hover { border-color: var(--green-main); transform: translateY(-3px); box-shadow: 0 12px 40px rgba(5,74,56,0.1); }
+.cat-card:hover::before { transform: scaleX(1); }
+.cat-icon-wrap {
+  width: 52px; height: 52px;
+  border-radius: var(--radius);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 26px;
+  margin-bottom: 18px;
+}
+.cat-card h3 {
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--green-dark);
+  margin-bottom: 8px;
+  letter-spacing: -0.2px;
+}
+.cat-card p {
+  font-size: 13.5px;
+  color: var(--ink-light);
+  line-height: 1.55;
+  margin-bottom: 20px;
+}
+.cat-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cat-count {
+  font-size: 12px;
+  color: var(--green-mid);
+  font-weight: 500;
+  background: var(--green-pale);
+  padding: 3px 10px;
+  border-radius: 99px;
+}
+.cat-arrow {
+  width: 28px; height: 28px;
+  border: 1px solid #d4dbd6;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--green-mid);
+  transition: background 0.15s, border-color 0.15s;
+}
+.cat-card:hover .cat-arrow { background: var(--green-main); border-color: var(--green-main); color: var(--white); }
+
+/* ── FEATURES STRIP ── */
+.features-strip {
+  background: var(--green-dark);
+  padding: 48px 0;
+}
+.features-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+}
+.feature {
+  padding: 0 40px;
+  border-right: 1px solid rgba(255,255,255,0.1);
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+}
+.feature:last-child { border-right: none; }
+.feature-icon {
+  width: 44px; height: 44px;
+  background: rgba(26,184,122,0.15);
+  border-radius: var(--radius-sm);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  font-size: 22px;
+}
+.feature h4 {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--white);
+  margin-bottom: 4px;
+}
+.feature p {
+  font-size: 13px;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.55;
+}
+
+/* ── PRODUCTS ── */
+.products-bg {
+  background: var(--sand);
+  padding: 4px 0;
+}
+.prod-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+.prod-card {
+  background: var(--white);
+  border: 1px solid #e4ece7;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+.prod-card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(5,74,56,0.09); }
+.prod-img {
+  height: 120px;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--green-pale);
+  font-size: 42px;
+  position: relative;
+}
+.prod-badge-wrap {
+  position: absolute;
+  top: 10px; left: 10px;
+}
+.prod-badge {
+  background: var(--green-dark);
+  color: var(--white);
+  font-size: 10px;
+  font-weight: 600;
+  padding: 3px 9px;
+  border-radius: 99px;
+  letter-spacing: 0.3px;
+}
+.prod-badge.off { background: #c94040; }
+.prod-info { padding: 14px 16px 16px; }
+.prod-info h4 {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink);
+  line-height: 1.4;
+  margin-bottom: 10px;
+  min-height: 36px;
+}
+.prod-price {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+.price-now {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--green-dark);
+  font-feature-settings: "tnum";
+}
+.price-old {
+  font-size: 12px;
+  color: var(--ink-light);
+  text-decoration: line-through;
+}
+.price-cuotas {
+  font-size: 11px;
+  color: var(--green-mid);
+}
+.btn-add {
+  width: 100%;
+  background: var(--green-dark);
+  color: var(--white);
+  border: none;
+  padding: 9px;
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  transition: background 0.15s;
+}
+.btn-add:hover { background: var(--green-mid); }
+
+/* ── SOCIAL PROOF ── */
+.proof {
+  background: var(--white);
+  border-top: 1px solid #e8ede9;
+  border-bottom: 1px solid #e8ede9;
+}
+.proof-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 56px 32px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+.proof-title {
+  font-family: 'DM Serif Display', serif;
+  font-size: 32px;
+  color: var(--green-dark);
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+.proof-sub {
+  font-size: 15px;
+  color: var(--ink-light);
+  line-height: 1.65;
+  margin-bottom: 28px;
+}
+.proof-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.tag {
+  background: var(--green-pale);
+  color: var(--green-dark);
+  border: 1px solid var(--green-light);
+  font-size: 13px;
+  padding: 6px 14px;
+  border-radius: 99px;
+  font-weight: 400;
+}
+.proof-numbers {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.proof-num-card {
+  background: var(--green-pale);
+  border: 1px solid var(--green-light);
+  border-radius: 14px;
+  padding: 24px 20px;
+  text-align: center;
+}
+.proof-num-card .big {
+  font-family: 'DM Serif Display', serif;
+  font-size: 38px;
+  color: var(--green-dark);
+  letter-spacing: -1px;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+.proof-num-card .small {
+  font-size: 13px;
+  color: var(--ink-light);
+}
+
+/* ── CTA / WHATSAPP ── */
+.cta-section {
+  background: var(--green-dark);
+  background-image: radial-gradient(ellipse at 70% 50%, rgba(26,184,122,0.18) 0%, transparent 70%);
+  padding: 72px 32px;
+  text-align: center;
+}
+.cta-section h2 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 38px;
+  color: var(--white);
+  letter-spacing: -1px;
+  margin-bottom: 14px;
+}
+.cta-section p {
+  font-size: 16px;
+  color: rgba(255,255,255,0.55);
+  margin-bottom: 36px;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn-wa {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #25d366;
+  color: var(--white);
+  padding: 15px 32px;
+  border-radius: var(--radius-sm);
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  font-family: 'DM Sans', sans-serif;
+  transition: background 0.15s, transform 0.1s;
+}
+.btn-wa:hover { background: #1fbc5a; transform: translateY(-2px); }
+.btn-wa svg { width: 22px; height: 22px; }
+
+/* ── FOOTER ── */
+footer {
+  background: var(--ink);
+  color: rgba(255,255,255,0.5);
+  font-size: 13px;
+}
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px 32px 32px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 48px;
+}
+.footer-brand .logo { color: var(--white); margin-bottom: 12px; display: block; }
+.footer-brand p { line-height: 1.6; max-width: 240px; }
+footer h5 {
+  color: var(--white);
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+footer ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+footer ul a { color: rgba(255,255,255,0.5); transition: color 0.15s; }
+footer ul a:hover { color: var(--white); }
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding: 20px 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}
+.footer-bottom a { color: rgba(255,255,255,0.4); transition: color 0.15s; }
+.footer-bottom a:hover { color: var(--white); }
+
+/* ── WA FLOAT ── */
+.wa-float {
+  position: fixed;
+  bottom: 28px; right: 28px;
+  background: #25d366;
+  color: var(--white);
+  width: 56px; height: 56px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+  z-index: 200;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.wa-float:hover { transform: scale(1.1); box-shadow: 0 8px 28px rgba(37,211,102,0.5); }
+.wa-float svg { width: 28px; height: 28px; }
+
+/* ── ANIMATIONS ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.hero-eyebrow { animation: fadeUp 0.5s ease both; }
+.hero h1      { animation: fadeUp 0.55s 0.1s ease both; }
+.hero-sub     { animation: fadeUp 0.55s 0.2s ease both; }
+.hero-btns    { animation: fadeUp 0.55s 0.3s ease both; }
+.hero-stats   { animation: fadeUp 0.55s 0.2s ease both; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+  .hero { grid-template-columns: 1fr; gap: 40px; }
+  .hero h1 { font-size: 36px; }
+  .hero-stats { grid-template-columns: repeat(4, 1fr); }
+  .cat-grid { grid-template-columns: 1fr; }
+  .prod-grid { grid-template-columns: repeat(2, 1fr); }
+  .features-inner { grid-template-columns: 1fr; gap: 28px; }
+  .feature { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.1); padding: 0 0 28px 0; }
+  .feature:last-child { border-bottom: none; padding-bottom: 0; }
+  .proof-inner { grid-template-columns: 1fr; gap: 40px; }
+  .footer-inner { grid-template-columns: 1fr 1fr; gap: 32px; }
+}
+</style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <div class="topbar-track">
+    <span><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg> Envío GRATIS desde $30.000 — CABA y Zona Norte</span>
+    <span><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg> 2 cuotas sin interés</span>
+    <span><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="2"/></svg> Precios de fábrica directos</span>
+    <span><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Sin costo de despacho ni embalaje</span>
+    <!-- duplicate for seamless loop -->
+    <span><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg> Envío GRATIS desde $30.000 — CABA y Zona Norte</span>
+    <span><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg> 2 cuotas sin interés</span>
+    <span><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="2"/></svg> Precios de fábrica directos</span>
+    <span><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Sin costo de despacho ni embalaje</span>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="logo">casa<em>papel</em></a>
+    <ul class="nav-links">
+      <li><a href="#categorias">Papelera</a></li>
+      <li><a href="#categorias">Gastronomía & Delivery</a></li>
+      <li><a href="#categorias">Limpieza & Higiene</a></li>
+      <li><a href="#envios">Envíos</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="btn-ghost">Ingresar</button>
+      <button class="btn-cart">
+        <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        Carrito (0)
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section style="background: var(--green-pale);">
+  <div class="hero">
+    <div class="hero-text">
+      <div class="hero-eyebrow">
+        <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        Precios directos de fábrica
+      </div>
+      <h1>Insumos para tu<br>comercio al mejor<br><em>precio</em></h1>
+      <p class="hero-sub">Bolsas, cajas, descartables, productos de limpieza y más. Entregamos en CABA y Zona Norte sin cargo desde $30.000.</p>
+      <div class="hero-btns">
+        <a href="#productos" class="btn-primary">Ver productos</a>
+        <a href="https://wa.me/5491134500998" class="btn-outline" target="_blank">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.554 4.124 1.527 5.857L.057 23.57a.75.75 0 0 0 .921.921l5.83-1.47A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.891 0-3.662-.5-5.193-1.375l-.372-.214-3.865.975.996-3.782-.232-.384A10 10 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          WhatsApp
+        </a>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-badge">Envío</div>
+        <div class="stat-num"><span>GRATIS</span></div>
+        <div class="stat-lbl">CABA y Zona Norte</div>
+      </div>
+      <div class="stat">
+        <div class="stat-badge">Cuotas</div>
+        <div class="stat-num">2<span>x</span></div>
+        <div class="stat-lbl">Sin interés</div>
+      </div>
+      <div class="stat">
+        <div class="stat-badge">Productos</div>
+        <div class="stat-num">+<span>500</span></div>
+        <div class="stat-lbl">En stock</div>
+      </div>
+      <div class="stat">
+        <div class="stat-badge">Despacho</div>
+        <div class="stat-num"><span>$0</span></div>
+        <div class="stat-lbl">Sin cargo extra</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CATEGORIES -->
+<section class="section" id="categorias">
+  <div class="section-header">
+    <h2 class="section-title">Explorá por categoría</h2>
+    <a href="https://www.casapapel.com.ar/productos/" class="section-link">Ver todos los productos →</a>
+  </div>
+  <div class="cat-grid">
+    <a href="https://www.casapapel.com.ar/papelera/" class="cat-card">
+      <div class="cat-icon-wrap" style="background:#e6f5f0;">🗂️</div>
+      <h3>Papelera</h3>
+      <p>Bolsas de todo tipo, rollos térmicos, etiquetadoras, embalaje, regalería y más insumos de oficina y comercio.</p>
+      <div class="cat-footer">
+        <span class="cat-count">16 subcategorías</span>
+        <div class="cat-arrow">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+      </div>
+    </a>
+    <a href="https://www.casapapel.com.ar/gastronomia-y-delivery/" class="cat-card">
+      <div class="cat-icon-wrap" style="background:#fff3eb;">🍱</div>
+      <h3>Gastronomía & Delivery</h3>
+      <p>Descartables, bandejas, cajas y complementos, bolsas kraft, moldes de papel, repostería y fast food.</p>
+      <div class="cat-footer">
+        <span class="cat-count">14 subcategorías</span>
+        <div class="cat-arrow">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+      </div>
+    </a>
+    <a href="https://www.casapapel.com.ar/limpieza-e-higiene/" class="cat-card">
+      <div class="cat-icon-wrap" style="background:#eaf4de;">🧹</div>
+      <h3>Limpieza & Higiene</h3>
+      <p>Papel higiénico, toallas de papel, rollos de cocina, dispensers, guantes, barbijos y bolsas de residuo.</p>
+      <div class="cat-footer">
+        <span class="cat-count">6 subcategorías</span>
+        <div class="cat-arrow">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<div class="features-strip">
+  <div class="features-inner">
+    <div class="feature">
+      <div class="feature-icon">🚚</div>
+      <div>
+        <h4>Envío sin cargo</h4>
+        <p>CABA y Zona Norte desde $30.000. A todo el país sin costo de embalaje ni despacho.</p>
+      </div>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">🏭</div>
+      <div>
+        <h4>Precio de fábrica</h4>
+        <p>Comprás directo, sin intermediarios. Ahorrás en cada pedido.</p>
+      </div>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">💬</div>
+      <div>
+        <h4>Atención por WhatsApp</h4>
+        <p>Te ayudamos a elegir el producto ideal. Respondemos rápido en horario comercial.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PRODUCTS -->
+<div class="products-bg" id="productos">
+  <section class="section">
+    <div class="section-header">
+      <h2 class="section-title">Productos destacados</h2>
+      <a href="https://www.casapapel.com.ar/productos/" class="section-link">Ver todos →</a>
+    </div>
+    <div class="prod-grid">
+      <div class="prod-card">
+        <div class="prod-img">
+          🛍️
+          <div class="prod-badge-wrap"><span class="prod-badge">Más vendido</span></div>
+        </div>
+        <div class="prod-info">
+          <h4>Bolsas camiseta alta densidad</h4>
+          <div class="prod-price">
+            <span class="price-now">$1.800</span>
+          </div>
+          <div class="price-cuotas">2 cuotas sin interés de $900</div>
+          <button class="btn-add" style="margin-top:12px">Agregar al carrito</button>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img">
+          🗑️
+          <div class="prod-badge-wrap"><span class="prod-badge">Más vendido</span></div>
+        </div>
+        <div class="prod-info">
+          <h4>Bolsa residuo 50×70 negra ×20</h4>
+          <div class="prod-price">
+            <span class="price-now">$1.400</span>
+          </div>
+          <div class="price-cuotas">2 cuotas sin interés de $700</div>
+          <button class="btn-add" style="margin-top:12px">Agregar al carrito</button>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img">
+          🌯
+          <div class="prod-badge-wrap"><span class="prod-badge off">8% OFF</span></div>
+        </div>
+        <div class="prod-info">
+          <h4>Rollo aluminio 38cm × 1 kg</h4>
+          <div class="prod-price">
+            <span class="price-now">$10.000</span>
+            <span class="price-old">$10.900</span>
+          </div>
+          <div class="price-cuotas">2 cuotas sin interés de $5.000</div>
+          <button class="btn-add" style="margin-top:12px">Agregar al carrito</button>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img">
+          📦
+          <div class="prod-badge-wrap"><span class="prod-badge">Popular</span></div>
+        </div>
+        <div class="prod-info">
+          <h4>Bolsa ecommerce negra con adhesivo</h4>
+          <div class="prod-price">
+            <span class="price-now">$7.000</span>
+          </div>
+          <div class="price-cuotas">2 cuotas sin interés de $3.500</div>
+          <button class="btn-add" style="margin-top:12px">Agregar al carrito</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- PROOF -->
+<div class="proof">
+  <div class="proof-inner">
+    <div>
+      <h2 class="proof-title">Insumos para todo tipo de comercio</h2>
+      <p class="proof-sub">Desde kioscos y almacenes hasta restaurantes, panaderías, ferreterías y e-commerce. Si necesitás insumos para embalar, servir o limpiar, lo tenemos.</p>
+      <div class="proof-tags">
+        <span class="tag">Restaurantes</span>
+        <span class="tag">Delivery</span>
+        <span class="tag">E-commerce</span>
+        <span class="tag">Kioscos</span>
+        <span class="tag">Panaderías</span>
+        <span class="tag">Farmacias</span>
+        <span class="tag">Ferreterías</span>
+        <span class="tag">Supermercados</span>
+      </div>
+    </div>
+    <div class="proof-numbers">
+      <div class="proof-num-card">
+        <div class="big">+500</div>
+        <div class="small">Productos en catálogo</div>
+      </div>
+      <div class="proof-num-card">
+        <div class="big">$0</div>
+        <div class="small">Costo de despacho</div>
+      </div>
+      <div class="proof-num-card">
+        <div class="big">2x</div>
+        <div class="small">Cuotas sin interés</div>
+      </div>
+      <div class="proof-num-card">
+        <div class="big">Todo</div>
+        <div class="small">El país con envío</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<section class="cta-section" id="envios">
+  <h2>¿Necesitás asesoramiento?</h2>
+  <p>Escribinos por WhatsApp y te ayudamos a encontrar el producto ideal para tu negocio. Respondemos al instante.</p>
+  <a href="https://wa.me/5491134500998" class="btn-wa" target="_blank">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.554 4.124 1.527 5.857L.057 23.57a.75.75 0 0 0 .921.921l5.83-1.47A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.891 0-3.662-.5-5.193-1.375l-.372-.214-3.865.975.996-3.782-.232-.384A10 10 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+    Escribinos al +54 11 3450-0998
+  </a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="logo">casa<em style="color:var(--green-main)">papel</em></span>
+      <p>Insumos para comercios y hogares. Precios de fábrica con envío sin cargo en CABA y Zona Norte.</p>
+    </div>
+    <div>
+      <h5>Categorías</h5>
+      <ul>
+        <li><a href="https://www.casapapel.com.ar/papelera/">Papelera</a></li>
+        <li><a href="https://www.casapapel.com.ar/gastronomia-y-delivery/">Gastronomía & Delivery</a></li>
+        <li><a href="https://www.casapapel.com.ar/limpieza-e-higiene/">Limpieza & Higiene</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Ayuda</h5>
+      <ul>
+        <li><a href="https://www.casapapel.com.ar/envios/">Envíos</a></li>
+        <li><a href="https://www.casapapel.com.ar/account/login/">Mi cuenta</a></li>
+        <li><a href="https://www.casapapel.com.ar/contacto/">Contacto</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Contacto</h5>
+      <ul>
+        <li><a href="tel:1134500998">11 3450-0998</a></li>
+        <li><a href="https://instagram.com/casapapel.ok" target="_blank">@casapapel.ok</a></li>
+        <li><a href="https://wa.me/5491134500998" target="_blank">WhatsApp</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Casa Papel — CUIT 20-35072138-0</span>
+    <span>
+      <a href="https://www.argentina.gob.ar/produccion/defensadelconsumidor/formulario" target="_blank">Defensa del consumidor</a>
+      &nbsp;·&nbsp;
+      <a href="https://www.casapapel.com.ar/contacto/?order_cancellation_without_id=true">Botón de arrepentimiento</a>
+    </span>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/5491134500998" class="wa-float" target="_blank" aria-label="Contactar por WhatsApp">
+  <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.554 4.124 1.527 5.857L.057 23.57a.75.75 0 0 0 .921.921l5.83-1.47A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.891 0-3.662-.5-5.193-1.375l-.372-.214-3.865.975.996-3.782-.232-.384A10 10 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+</a>
+
+</body>
+</html>
